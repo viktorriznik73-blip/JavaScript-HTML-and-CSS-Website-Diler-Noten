@@ -1,0 +1,16 @@
+<div class="img-wrapper">
+    <img src="https://www.digitale-lernumgebung.de/images/diler-digitale-lernumgebung.png" alt="diler" id="digitale-lernumgebung">
+    <div id="img-loader-container" class="hidden">
+        <div id="img-progress-bar"></div>
+    </div>
+</div>
+<div class="section-container"></div>
+   <div id="schüler"><p id="pp">Schüler Noten</p>
+   <div id="loading-container" class="hidden">
+    <div id="progress-bar">
+    </div>
+</div> 
+<div class="section-container">
+<div id="schülerl"><p id="ppp">Schüler Info</p></div>
+    <div id="loading-containerp" class="hidden"> </div>
+ <div id="progress-barr"></div> 

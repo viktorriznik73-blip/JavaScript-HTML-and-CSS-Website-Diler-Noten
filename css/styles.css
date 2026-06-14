@@ -1,0 +1,356 @@
+
+/* --- ОСНОВНОЙ СТИЛЬ --- */
+body {
+  background-image: url('teutoburgerwald-m-15282251.jpg');
+}
+.section-container {
+  display: inline-block;
+  vertical-align: top;
+  margin: 20px;
+}
+#tablee {
+  margin-top: 100px;
+  position: relative;
+    width: 500px;
+     height: 400px;
+      border-radius: 50px;
+      overflow: hidden;
+      background-color: aliceblue;
+      box-shadow: 0 20px 40px black;
+     border: 2px solid aliceblue;
+     transition: all 0.3s ease ;
+     transform: translateY(7px);
+}
+#copy-btn {
+  font-family: "Roboto", sans-serif;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: 2px solid aliceblue;
+ background-color: green;
+  box-shadow: 0 5px 10px black;
+  cursor: pointer;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: 0.5s ease;
+  margin-left: 1200px;
+}
+#copy-btn.show-btn {
+ opacity: 1;
+ visibility: visible;
+ transform: translateY(0px);
+}
+#copy-btn:hover {
+  background-color: red;
+  color: black;
+  border-color: aliceblue;
+}
+#tablee:hover {
+  border: 2px solid black;
+  box-shadow: 0 20px 40px aliceblue;
+  transform: translateY(7px);
+  background-color: rgb(0, 0, 0);
+}
+#tablee:hover td, #tablee:hover th {
+  border: black;
+  color: aliceblue;
+  transition: 0.3s ease-in;
+  border-bottom: 2px solid aliceblue;
+  border-right: 2px solid aliceblue;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  cursor: pointer;
+}
+#table {
+  position: relative;
+   width: 700px;
+    height: 400px; 
+    border-radius: 50px;
+  margin-top: -430px;
+  margin-left: 600px;
+  border-radius: 50px;
+  border: 2px solid aliceblue;
+  overflow: hidden; 
+  background-color: aliceblue;
+  box-shadow: 0 10px 20px rgb(0, 0, 0);
+  /* Плавный возврат в исходное состояние */
+  transition: all 0.3s ease; 
+}
+
+#table:hover {
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 10px 20px aliceblue;
+  transform: translateY(7px);
+  border: 2px solid rgb(0, 0, 0);
+}
+
+#table:hover td, #table:hover th {
+  border-color: rgb(0, 0, 0);
+  color: aliceblue;
+transition: 0.3s ease-in;
+ border-bottom: 2px solid aliceblue;
+  border-right: 2px solid aliceblue;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  border-right: 2px solid rgb(0, 0, 0);
+  font-family: "Google Sans", sans-serif;
+  font-weight: 400; 
+  transition: border-color 0.3s ease;
+}
+#schülerl {
+ position: relative;
+   font-family: "Roboto", sans-serif;
+    font-size: 30px;
+     padding: 20px 40px;
+      width: 400px;
+       height: 100px;
+         border-radius: 50px;
+          border: 3px solid black;
+           box-shadow: 0 20px 40px black;
+            background-color: azure;
+            cursor: pointer;
+             transition: all 0.3s ease;
+}
+#ppp {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 20;
+  font-style: normal;
+  font-variation-settings:
+    "GRAD" 0;
+  font-optical-sizing: auto;
+  font-weight: 35px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  border-radius: 50px;
+}
+#schüler { 
+  position: relative;
+   font-family: "Roboto", sans-serif;
+    font-size: 30px;
+     padding: 20px 40px;
+      width: 600px;
+       height: 100px;
+         border-radius: 50px;
+          border: 3px solid black;
+           box-shadow: 0 20px 40px black;
+            background-color: aliceblue;
+            cursor: pointer;
+             transition: all 0.3s ease;
+             margin-bottom: 20px;
+          }
+#pp {
+   position: relative;
+    font-family: "Roboto", sans-serif;
+     font-optical-sizing: auto;
+      font-weight: 50;
+       font-style: normal;
+        font-size: 30px;
+  display: inline-block;
+ transition: all 0.3s ease;
+ border-radius: 50px;
+      }
+    /* Добавил цвет текста, чтобы он не пропадал на черном фоне */
+ #schüler:hover, #pp:hover {
+  background-color: rgb(0, 0, 0);
+  color: aliceblue; 
+  box-shadow: 0 10px 20px aliceblue;
+  /* Заменил на Y, чтобы кнопка визуально "прижималась" к земле */
+  transform: scale(1.03); 
+  border: 2px solid aliceblue;
+  transition: all 0.3s ease;
+}
+#schülerl:hover, #ppp:hover {
+  background-color: black;
+  cursor: azure;
+  box-shadow: 0 10px 20px aliceblue;
+  transform: scale(1.03);
+  border: 2px solid aliceblue;
+  transition: all 0.3s ease;
+  color: aliceblue;
+}
+#ppp.shake {
+  animation: shake 0.5s ease-in-out;
+}
+#ppp:active {
+  transform: translateY(5px);
+  box-shadow: 0 3px azure;
+  background-color: rgb(0, 17, 255);
+  color: black;
+}
+@keyframes shake {
+   0% { transform: translateX(0); }
+    25% { transform: translateX(-7px); }
+    50% { transform: translateX(7px); }
+    100% { transform: translateX(0); }
+}
+#pp.shake {
+    animation: shake 0.5s ease-in-out;
+}
+#pp:active {
+ transform: translateY(5px);
+    box-shadow: 0 2px azure;
+    background-color: rgb(0, 255, 242);
+    color: black;
+}
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-7px); }
+    50% { transform: translateX(7px); }
+    100% { transform: translateX(0); }
+}
+tr:last-child td { border-bottom: none; }
+td:last-child, th:last-child { border-right: none; }
+#copybtn.copybtn-hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.03);
+  transition: all 0.5s ease;
+}
+#Hello:active {
+  transform: translateY(10px);
+  transition: all 0.5s ease;
+}
+#copybtn.copybtn-show {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(0);
+}
+#tablee.table-hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+}
+#tablee.table-show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+/* Начальное состояние (скрыто) */
+#table.table-hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px); /* Таблица чуть ниже */
+    transition: all 0.5s ease;
+    /* Убираем display: none, чтобы работала анимация */
+}
+
+/* Состояние (показано) */
+#table.table-show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); /* Возвращается на место */
+}
+#loading-containerp {
+  position: relative;
+  width: 400px;
+  height: 10px;
+border: 2px solid aliceblue;
+border-radius: 50px;
+box-shadow: 0 5px 10px black;
+    background-color: rgb(0, 0, 0); 
+    margin: 10px auto;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 90px;
+}
+#loading-container {
+    position: relative;
+  width: 600px;
+height: 10px;
+border: 2px solid aliceblue;
+border-radius: 50px;
+box-shadow: 0 5px 10px black;
+    background-color: rgba(0, 0, 0, 0.774); /* Прозрачный aliceblue */
+    margin: 10px auto;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+    margin: 15px auto;
+}
+#progress-bar, #progress-barr {
+  position: relative;
+  width: 0%;
+  height: 100%;
+  background-color: aliceblue;
+  box-shadow: 0 0 10px aliceblue;
+  transition: width 0.4s ease;
+}
+/* Класс для скрытия, когда загрузка не идет */
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+}
+
+/* Анимация "бегающей" полоски (опционально) */
+.loading-active #progress-bar {
+    animation: load-progress 2s infinite ease-in-out;
+}
+.loading-active #progress-barr {
+    animation: load-progress 2s infinite ease-in-out;
+}
+.img-wrapper {
+    position: relative; 
+    display: inline-block;
+    width: 150px;
+}
+
+#digitale-lernumgebung {
+  position: relative;
+    display: block;
+    width: 50%; /* Картинка заполнит весь wrapper */
+    height: auto;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#img-loader-container {
+     position: relative;
+  width: 170px;
+height: 10px;
+border: 2px solid aliceblue;
+border-radius: 50px;
+box-shadow: 0 5px 10px black;
+    background-color: rgba(13, 129, 171, 0.795); /* Прозрачный aliceblue */
+    margin: 10px auto;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+}
+#img-progress-bar {
+  width: 100px;
+    height: 100%;
+    background-color: aliceblue;
+    box-shadow: 0 0 10px aliceblue;
+    transition: width 0.4s ease; 
+}
+@keyframes load-progress {
+    0% { width: 0%; transform: translateX(0px);}
+    50% { width: 50%; transform: translateX(50px);  }
+    100% { width: 100%; transform: translateX(0px);  }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-7px); }
+    75% { transform: translateX(7px); }
+}

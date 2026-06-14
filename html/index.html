@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Diler Noten und Info</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+<div class="img-wrapper">
+    <img src="https://www.digitale-lernumgebung.de/images/diler-digitale-lernumgebung.png" alt="diler" id="digitale-lernumgebung">
+    <div id="img-loader-container" class="hidden">
+        <div id="img-progress-bar"></div>
+    </div>
+</div>
+
+<div class="section-container">
+    <div id="schüler">
+        <p id="pp">Schüler Noten</p>
+    </div>
+    
+    <div id="loading-container" class="hidden">
+        <div id="progress-bar"></div>
+    </div>
+</div> 
+
+<div class="section-container">
+    <div id="schülerl">
+        <p id="ppp">Schüler Info</p>
+    </div>
+    
+    <div id="loading-containerp" class="hidden">
+        <div id="progress-barr"></div>
+    </div>
+</div>
+    <table border="2" class="table-hidden" id="tablee">
+    <tr>
+        <th>Jahren</th>
+        <th>Blutgruppe</th>
+        <th>Jahrgang</th>
+        <th>Sozialverhalten</th>
+    </tr>
+    <tr>
+        <td>Info1</td>
+        <td>Info2</td>
+        <td>Info3</td>
+        <td>Info4</td>
+    </tr>
+</table>
+
+<table border="2" class="table-hidden" id="table">
+    <tr>
+    <th>Gelingsnachweis</th>
+    <th>Kurs</th>
+    <th>Modulprüfung</th>
+    <th>Klassenarbeit</th>
+</tr>
+<tr>
+    <td id="grade-geling">Note 1</td> 
+    <td id="grade-kurs">Note 2</td>
+    <td id="grade-modul">Note 3</td>
+    <td id="grade-arbeit">Note 4</td>
+</tr>
+</table>
+<button id="copy-btn" class="btn-hidden" onclick="copyText()">Copy Info</button>
+<script src="/js/main.js"></script>
+    </body>
+    </html>
+    
+
+

@@ -1,16 +1,34 @@
-<div class="img-wrapper">
-    <img src="https://www.digitale-lernumgebung.de/images/diler-digitale-lernumgebung.png" alt="diler" id="digitale-lernumgebung">
-    <div id="img-loader-container" class="hidden">
-        <div id="img-progress-bar"></div>
-    </div>
-</div>
-<div class="section-container"></div>
-   <div id="schüler"><p id="pp">Schüler Noten</p>
-   <div id="loading-container" class="hidden">
-    <div id="progress-bar">
-    </div>
-</div> 
-<div class="section-container">
-<div id="schülerl"><p id="ppp">Schüler Info</p></div>
-    <div id="loading-containerp" class="hidden"> </div>
- <div id="progress-barr"></div> 
+if (btnCopy) {
+        btnCopy.addEventListener("click", () => {
+            const infoText = "Gelingsnachweis Kurs Modulprüfung Klassenarbeit Note 1 Note 2 Note 3 Note 4";
+            navigator.clipboard.writeText(infoText)
+                .then(() => {
+                    btnCopy.innerText = "Copied :)";
+                    btnCopy.style.backgroundColor = "white";
+                    setTimeout(() => {
+                        btnCopy.innerText = "Copy Info";
+                        btnCopy.style.backgroundColor = "green";
+                    }, 2000);
+                })
+                .catch(err => {
+                    console.log("Mistake :(", err);
+                });
+        });
+    }
+if (buttonCopy) {
+    buttonCopy.addEventListener("click", () => {
+        const textinfo = "Jahren Blutgruppe Jahrgang Sozialverhalten Info1 Info2 Info3 Info4"
+        navigator.clipboard.writeText(textinfo)
+        .then(() => {
+            buttonCopy.innerText = "Copied :)";
+            buttonCopy.style.backgroundColor = "white";
+            setTimeout(() => {
+                buttonCopy.innerText = "Copy Info";
+                buttonCopy.style.backgroundColor = "green";
+            }, 2000);
+        })
+        .catch(err => {
+               console.log("Mistake :(", err);
+        });
+    })
+}
